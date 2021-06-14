@@ -1,0 +1,153 @@
+.wrap {
+    min-height: 100vh;
+    width: 100%;
+}
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: transparent;
+    color: #fff;
+}
+
+.navigation ul li a {
+    color: #fff;
+}
+
+.logo {
+    color: #fff;
+}
+
+.firstp {
+    height: 85vh;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.firstp h1 {
+    font-family: DeliusUnicase;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 130px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+@font-face {
+    font-family: DeliusUnicase;
+    src: url(../fonts/DeliusUnicase.ttf)
+}
+
+main {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.secondp {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.secondp h1 {
+    font-family: DeliusUnicase;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 60px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #141414;
+    margin: 40px;
+    text-transform: uppercase;
+}
+
+.part {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 60px 40px;
+    padding: 0 100px;
+}
+
+.reversPart {
+    flex-direction: row-reverse;
+}
+
+.about {
+    text-align: start;
+    max-width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.name {
+    margin: 20px 0;
+}
+
+.image {
+    width: 353px;
+    height: 262px;
+    background-position: center;
+    background-size: cover;
+    max-width: 95%;
+}
+
+.text {
+    font-size: 20px;
+}
+
+.name {
+    font-size: 50px;
+}
+
+details>summary {
+    list-style: none;
+    transition: 0.3s;
+}
+
+details>summary:hover {
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+@media screen and (max-width:900px) {
+    .firstp h1 {
+        font-size: 80px;
+    }
+    .secondp h1 {
+        font-size: 40px;
+        !important
+    }
+    .name {
+        font-size: 25px;
+    }
+    .part {
+        flex-direction: column;
+    }
+    .reversPart {
+        flex-direction: column;
+    }
+    .text {
+        font-size: 18px;
+        !important
+    }
+}
