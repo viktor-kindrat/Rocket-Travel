@@ -1,0 +1,105 @@
+#headb {
+    font-family: Courier, monospace;
+    font-weight: 600;
+    font-size: 54px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #141414;
+    text-transform: uppercase;
+    margin-top: 10vh;
+    width: 100%;
+}
+
+.form {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.instructions {
+    font-family: Comfortaa;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 33px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+}
+
+form {
+    min-height: 60vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.forContact {
+    height: 100%;
+    margin: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+.message {
+    margin: 20px;
+}
+
+.forContact input {
+    width: 360px;
+    height: 50px;
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid #8D8D8D;
+    margin: 25px;
+}
+
+.message input {
+    width: 360px;
+    height: 350px;
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid #8D8D8D;
+}
+
+@media screen and (max-width:900px) {
+    .instructions {
+        font-size: 20px;
+        line-height: 33px;
+    }
+    .forContact input {
+        width: 260px;
+        height: 50px;
+        border-radius: 5px;
+        padding: 10px;
+    }
+    .message input {
+        width: 260px;
+        height: 52vh;
+        border-radius: 5px;
+        padding: 10px;
+        text-align: start;
+    }
+}
+
+@media screen and (max-width:700px) {
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+    .forContact input {
+        margin: 20px;
+    }
+    .mybtn {
+        margin-bottom: 40px;
+    }
+}

@@ -1,0 +1,283 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: #fff;
+    color: #3B003D;
+    position: fixed;
+}
+
+.logo {
+    color: #3B003D;
+}
+
+.navigation ul li a {
+    color: #3B003D;
+}
+
+
+/*FIRST SCREEN*/
+
+.firsta {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.firsta h2 {
+    font-family: Courier, monospace;
+    font-weight: 600;
+    font-size: 54px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #141414;
+    text-transform: uppercase;
+    margin-top: 12vh;
+    width: 100%;
+}
+
+.firsta #aboutus {
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.box img {
+    height: 100px;
+    width: 100px;
+}
+
+.box {
+    height: 250px;
+    width: 200px;
+}
+
+.about {
+    font-family: Comfortaa;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 20px;
+}
+
+
+/*        SECOND SCREEN*/
+
+.seconda h3 {
+    font-family: Courier, monospace;
+    font-weight: 600;
+    font-size: 44px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #141414;
+    text-transform: uppercase;
+    margin-top: 50px;
+    width: 100%;
+}
+
+.text p {
+    font-family: Comfortaa;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    padding: 70px;
+    text-align: center;
+}
+
+.photos {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 100px;
+}
+
+.photo1 {
+    height: 305px;
+    width: 255px;
+    background-image: url(./photos/about/relax1.jfif);
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.photo2 {
+    height: 305px;
+    width: 255px;
+    background-image: url(./photos/about/relax2.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.photo3 {
+    height: 305px;
+    width: 255px;
+    background-image: url(./photos/about/relax3.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.photos div:hover {
+    height: 265px;
+    width: 315px;
+    transition: 0.5s;
+}
+
+@media screen and (max-width:900px) {
+    /*    FIRST*/
+    .firsta {
+        min-height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .firsta h2 {
+        font-weight: 600;
+        font-size: 34px;
+        !important display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-top: 12vh;
+        width: 100%;
+    }
+    .firsta #aboutus {
+        width: 100%;
+        min-height: 50vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+    }
+    .box img {
+        height: 100px;
+        width: 100px;
+    }
+    .box {
+        height: 150px;
+        width: 100px;
+    }
+    .about {
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin: 20px;
+    }
+    /*    SECOND*/
+    .seconda h3 {
+        font-size: 34px;
+        !important display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-top: 40px;
+        width: 100%;
+    }
+    .text p {
+        font-size: 20px;
+        padding: 70px;
+        text-align: center;
+    }
+    .photos {
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        margin-bottom: 100px;
+    }
+    .photo1 {
+        height: 305px;
+        width: 255px;
+        background-image: url(./photos/about/relax1.jfif);
+        background-size: cover;
+        background-position: center;
+        border-radius: 20px;
+        transition: 0.3s;
+        margin: 20px;
+    }
+    .photo2 {
+        height: 305px;
+        width: 255px;
+        background-image: url(./photos/about/relax2.jpg);
+        background-size: cover;
+        background-position: center;
+        border-radius: 20px;
+        transition: 0.3s;
+        margin: 20px;
+    }
+    .photo3 {
+        height: 305px;
+        width: 255px;
+        background-image: url(./photos/about/relax3.jpg);
+        background-size: cover;
+        background-position: center;
+        border-radius: 20px;
+        transition: 0.3s;
+        margin: 20px;
+    }
+    .photos div:hover {
+        height: 265px;
+        width: 315px;
+        transition: 0.5s;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .firsta #aboutus {
+        width: 100%;
+        min-height: 150vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+    }
+    .box img {
+        height: 150px;
+        width: 150px;
+    }
+    .box {
+        height: 200px;
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .about {
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin: 20px;
+    }
+    .text p {
+        font-size: 20px;
+        padding: 70px;
+        text-align: left;
+    }
+}

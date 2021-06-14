@@ -1,0 +1,983 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+#preloader {
+    animation-name: preload;
+    animation-duration: 8s;
+    animation-iteration-count: 1;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    visibility: visible;
+    position: fixed;
+    background-color: #fff;
+}
+
+.d1 {
+    animation-name: jumping1;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    position: relative;
+    animation-name: preload;
+}
+
+.d2 {
+    animation-name: jumping2;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    position: relative;
+    animation-name: preload;
+}
+
+.d3 {
+    animation-name: jumping3;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    position: relative;
+    animation-name: preload;
+}
+
+@keyframes jumping1 {
+    0% {
+        top: -15px;
+        transition: 0.5s;
+    }
+    50% {
+        top: 0;
+        transition: 0.5s;
+    }
+    100% {
+        top: 0;
+        transition: 0.5s;
+    }
+}
+
+@keyframes jumping2 {
+    0% {
+        top: 0;
+        transition: 0.5s;
+    }
+    50% {
+        top: -15px;
+        transition: 0.5s;
+    }
+    100% {
+        top: 0;
+        transition: 0.5s;
+    }
+}
+
+@keyframes jumping3 {
+    0% {
+        top: 0;
+        transition: 0.5s;
+    }
+    50% {
+        top: 0;
+        transition: 0.5s;
+    }
+    100% {
+        top: -15px;
+        transition: 0.5s;
+    }
+}
+
+#preloader img {
+    height: 200px;
+    width: 200px;
+    animation-name: preload;
+    animation-duration: 8s;
+    animation-iteration-count: 1;
+    display: flex;
+    visibility: visible;
+}
+
+.preloaderText {
+    font-size: 30px;
+    font-family: Comfortaa;
+    color: #141414;
+    margin: 15px;
+    animation-name: preload;
+    animation-duration: 8s;
+    animation-iteration-count: 1;
+    display: flex;
+    visibility: visible;
+}
+
+@keyframes preload {
+    0% {
+        z-index: 2;
+    }
+    50% {
+        z-index: 2;
+    }
+    90% {
+        z-index: 0;
+        opacity: 1;
+        transition: 0.5s;
+    }
+    100% {
+        z-index: 0;
+        transition: 0.5s;
+    }
+}
+
+
+/*    header*/
+
+.wrap {
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header {
+    background: transparent;
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    /*    position: fixed;*/
+    box-shadow: 0 1px 2px #160016;
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+    left: 0;
+    right: 0;
+}
+
+.logo {
+    overflow: hidden;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 117px;
+    font-family: ModernAntiqua;
+    color: #fff;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 50px;
+}
+
+@font-face {
+    font-family: ModernAntiqua;
+    src: url(./fonts/ModernAntiqua.ttf)
+}
+
+.logo img {
+    height: 56px;
+    width: 56px;
+    margin-right: 15px;
+}
+
+.navigation {
+    overflow: hidden;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav li a {
+    color: #fff;
+    font-family: Comfortaa;
+    text-decoration: none;
+    font-size: 24px;
+    transition: 0.3s;
+}
+
+@font-face {
+    font-family: Comfortaa;
+    src: url(./fonts/Comfortaa.ttf)
+}
+
+.nav li a:hover {
+    opacity: 0.8;
+    transition: 0.3s;
+    text-decoration: underline;
+}
+
+main {
+    z-index: 1;
+}
+
+
+/*first screen*/
+
+.first {
+    overflow: hidden;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(./photos/main/main%20background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.first h1 {
+    overflow: hidden;
+    font-family: Caveat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 130px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+@font-face {
+    font-family: Caveat;
+    src: url(./fonts/Caveat-Regular.ttf)
+}
+
+.mybtn {
+    padding: 7px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 70px;
+    background-color: #3B003D;
+    border-radius: 5px;
+    font-family: Comfortaa;
+    text-decoration: none;
+    color: #fff; 
+    font-size: 25px;
+    transition: 0.5s;
+}
+
+.mybtn:hover {
+    background-color: #2B002D;
+    transition: 1s;
+    border-radius: 40px;
+    color: #fff;
+}
+
+
+/*second*/
+
+.second {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    background-color: #fff;
+    flex-direction: row-reverse;
+}
+
+.left {
+    height: 100vh;
+    width: 50%;
+    background: url(./photos/main/sea.jpg);
+    background-size: 200%;
+    background-position: left;
+    font-family: Imprint MT Shadow;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 90px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    justify-content: flex-end;
+    color: #FFFFFF;
+    padding: 20px;
+}
+
+.right {
+    height: 100vh;
+    width: 50%;
+    font-family: Comfortaa;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    color: #141414;
+}
+
+
+/*reviews*/
+
+.reviews {
+    width: 95%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    padding-bottom: 50px;
+}
+
+.reviews h2 {
+    font-family: Courier, monospace;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 54px;
+    line-height: 99px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #141414;
+    text-transform: uppercase;
+}
+
+.comments {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+.commentBody {
+    margin: 20px 0;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.photo img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 5px solid #3B003D;
+}
+
+.photoWB img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+.comment {
+    background: #C4C4C4;
+    border-radius: 15px;
+    max-width: 80%;
+    min-height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.head p {
+    font-family: Capriola;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 45px;
+    display: flex;
+    align-items: center;
+    color: #141414;
+}
+
+.bottom {
+    font-family: Comfortaa;
+    font-style: normal;
+    font-weight: 600;
+    color: #141414;
+    font-size: 18px;
+}
+
+@font-face {
+    font-family: Capriola;
+    src: url(./fonts/Capriola.ttf)
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    overflow: hidden;
+}
+
+.stars {
+    background-image: url(./photos/main/rewiews/rating1.png);
+    min-width: 140px;
+    height: 50px;
+    background-size: 100%;
+    background-position: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.stars1 {
+    background-image: url(./photos/main/rewiews/rating2.png);
+    min-width: 140px;
+    height: 50px;
+    background-size: 100%;
+    background-position: center;
+    overflow-y: hidden;
+}
+
+
+/*FOOTER */
+
+footer {
+    background-color: #000E1F;
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+}
+
+
+/*left*/
+
+a img {
+    height: 50px;
+    width: 50px;
+    transition: 0.5s;
+    position: relative;
+}
+
+.left1 {
+    width: 50%;
+    height: 100%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.socialMedia {
+    min-height: 75px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+a img:hover {
+    margin-bottom: 20px;
+    transition: 1s;
+}
+
+.contacts {
+    height: 30%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.contact {
+    font-family: Pridi;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.copy {
+    font-family: Pridi;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.25);
+}
+
+.right1 {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width:900px) {
+    /*    HEADER*/
+    .header {
+        max-height: 10vh;
+        width: 100%;
+    }
+    .logo {
+        height: 100%;
+        width: 50%;
+        padding-left: 50px;
+        font-size: 30px;
+    }
+    .logo img {
+        height: 36px;
+        width: 36px;
+        margin-right: 10px;
+    }
+    .navigation {
+        width: 80%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .nav {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 5px;
+        align-items: center;
+    }
+    .nav li a {
+        font-size: 18px;
+    }
+    /*    FIRST SCREEN*/
+    .first h1 {
+        font-size: 90px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+    .btn {
+        padding: 7px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 180px;
+        height: 50px;
+        font-size: 18px;
+    }
+    /*    SECOND*/
+    .second {
+        height: 80vh;
+        width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .left {
+        height: 80vh;
+        width: 50%;
+        background: url(./photos/main/sea.jpg);
+        background-size: 250%;
+        background-position: left;
+        font-size: 55px;
+        display: flex;
+        align-items: center;
+        text-align: right;
+        justify-content: flex-end;
+        padding: 20px;
+    }
+    .right {
+        height: 80vh;
+        width: 50%;
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+        padding: 15px;
+    }
+    /*    THIRD*/
+    .reviews {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 50px;
+    }
+    .reviews h2 {
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 100px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+    .comments {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: baseline;
+    }
+    .commentBody {
+        margin: 20px 0;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+    }
+    .photo img {
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+    }
+    .photoWB img {
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+    }
+    .comment {
+        border-radius: 15px;
+        max-width: 80%;
+        min-height: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+        margin-top: 20px;
+    }
+    .head p {
+        font-size: 26px;
+        line-height: 35px;
+        display: flex;
+        align-items: center;
+    }
+    .bottom {
+        font-size: 16px;
+    }
+    .head {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 40px;
+        align-items: center;
+    }
+    .stars {
+        background-image: url(./photos/main/rewiews/rating1.png);
+        min-width: 120px;
+        height: 30px;
+        background-size: 100%;
+        background-position: center;
+        text-align: center;
+    }
+    .stars1 {
+        background-image: url(./photos/main/rewiews/rating2.png);
+        min-width: 120px;
+        height: 30px;
+        background-size: 100%;
+        background-position: center;
+        text-align: center;
+    }
+    /*    FOOTER */
+    footer {
+        height: 90vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    /*left*/
+    a img {
+        height: 40px;
+        width: 40px;
+        transition: 0.5s;
+        position: relative;
+    }
+    .left1 {
+        width: 100%;
+        height: 35%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .socialMedia {
+        min-height: 75px;
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .contacts {
+        height: 35%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .contact {
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+    .copy {
+        font-size: 15px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+    .right1 {
+        width: 1000%;
+        height: 65%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:700px) {
+    /*    HEADER*/
+    .header {
+        max-height: 8vh;
+        width: 100%;
+    }
+    .logo p {
+        display: none;
+    }
+    .logo {
+        height: 100%;
+        width: 15%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-left: 0;
+        font-size: 30px;
+    }
+    .logo img {
+        height: 36px;
+        width: 36px;
+        margin-right: 0;
+    }
+    .navigation {
+        width: 85%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .nav {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        padding: 5px;
+        align-items: center;
+    }
+    .nav li a {
+        font-size: 17px;
+    }
+    /*    FIRST SCREEN*/
+    .first {
+        height: 100vh;
+    }
+    .first h1 {
+        font-size: 50px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+    .btn {
+        padding: 7px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 170px;
+        height: 45px;
+        font-size: 18px;
+    }
+    /*    SECOND*/
+    .second {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 1px;
+    }
+    .left {
+        height: 50vh;
+        width: 100%;
+        background: url(./photos/main/sea.jpg);
+        background-size: 250%;
+        background-position: left;
+        font-size: 40px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        padding: 20px;
+    }
+    .right {
+        height: 50vh;
+        width: 100%;
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        padding: 15px;
+    }
+    /*    THIRD*/
+    .reviews {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 50px;
+    }
+    .reviews h2 {
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 100px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+    .comments {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: baseline;
+    }
+    .commentBody {
+        margin: 20px 5px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+    }
+    .photo img {
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+    }
+    .photoWB img {
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+    }
+    .comment {
+        border-radius: 15px;
+        max-width: 80%;
+        min-height: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+        margin-top: 20px;
+    }
+    .head p {
+        font-size: 26px;
+        line-height: 35px;
+        display: flex;
+        align-items: center;
+    }
+    .bottom {
+        font-size: 16px;
+    }
+    .head {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 40px;
+        align-items: center;
+    }
+    .stars {
+        background-image: url(./photos/main/rewiews/rating1.png);
+        min-width: 120px;
+        height: 30px;
+        background-size: 100%;
+        background-position: center;
+        text-align: center;
+    }
+    .stars1 {
+        background-image: url(./photos/main/rewiews/rating2.png);
+        min-width: 120px;
+        height: 30px;
+        background-size: 100%;
+        background-position: center;
+        text-align: center;
+    }
+    /*    FOOTER */
+    footer {
+        height: 90vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    /*left*/
+    a img {
+        height: 40px;
+        width: 40px;
+        transition: 0.5s;
+        position: relative;
+    }
+    .left1 {
+        width: 100%;
+        height: 35%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .socialMedia {
+        min-height: 75px;
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .contacts {
+        height: 35%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .contact {
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+    .copy {
+        font-size: 15px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+    .right1 {
+        width: 1000%;
+        height: 65%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
