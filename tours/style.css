@@ -148,9 +148,11 @@ details>summary:hover {
     }
     .part {
         flex-direction: column;
+        padding: 10px;
     }
     .reversPart {
         flex-direction: column;
+        padding: 10px;
     }
     .text {
         font-size: 18px;
