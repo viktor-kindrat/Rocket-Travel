@@ -130,6 +130,12 @@ details>summary:hover {
 }
 
 @media screen and (max-width:900px) {
+    .image {
+        width: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    
     .firstp h1 {
         font-size: 80px;
     }
