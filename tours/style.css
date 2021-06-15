@@ -137,7 +137,7 @@ details>summary:hover {
     }
     
     .firstp h1 {
-        font-size: 80px;
+        font-size: 60px;
     }
     .secondp h1 {
         font-size: 40px;
@@ -149,10 +149,12 @@ details>summary:hover {
     .part {
         flex-direction: column;
         padding: 10px;
+        margin: 5px;
     }
     .reversPart {
         flex-direction: column;
         padding: 10px;
+        margin: 5px;
     }
     .text {
         font-size: 18px;
