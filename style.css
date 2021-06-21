@@ -168,6 +168,7 @@
     font-style: normal;
     font-weight: 500;
     font-size: 35px;
+    user-select: none;
 }
 
 @font-face {
@@ -201,6 +202,7 @@
 }
 
 .nav li a {
+    user-select: none;
     color: #fff;
     font-family: Comfortaa;
     text-decoration: none;
@@ -241,6 +243,7 @@ main {
 }
 
 .first h1 {
+    user-select: none;
     overflow: hidden;
     font-family: Caveat;
     font-style: normal;
@@ -271,6 +274,8 @@ main {
     color: #fff;
     font-size: 25px;
     transition: 0.5s;
+    margin-bottom: 10px;
+    user-select: none;
 }
 
 .mybtn:hover {
@@ -479,6 +484,7 @@ a img {
 }
 
 .socialMedia {
+    user-select: none;
     min-height: 75px;
     width: 80%;
     display: flex;
@@ -497,6 +503,7 @@ a img:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-family: 'Courier New', Courier, monospace;
     justify-content: space-around;
 }
 
@@ -509,6 +516,7 @@ a img:hover {
 }
 
 .copy {
+    user-select: none;
     font-family: Pridi;
     font-size: 18px;
     display: flex;
