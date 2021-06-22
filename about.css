@@ -64,6 +64,7 @@
 }
 
 .about {
+    overflow: hidden;
     font-family: Comfortaa;
     font-size: 20px;
     display: flex;
@@ -155,7 +156,7 @@
     .firsta h2 {
         font-weight: 600;
         font-size: 34px;
-        !important display: flex;
+        display: flex;
         justify-content: center;
         text-align: center;
         margin-top: 12vh;
@@ -188,7 +189,7 @@
     /*    SECOND*/
     .seconda h3 {
         font-size: 34px;
-        !important display: flex;
+        display: flex;
         justify-content: center;
         text-align: center;
         margin-top: 40px;
