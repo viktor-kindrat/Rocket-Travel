@@ -120,13 +120,37 @@ main {
 }
 
 details>summary {
-    list-style: none;
     transition: 0.3s;
+    list-style-position: inside;
 }
 
 details>summary:hover {
+    cursor: pointer;
     opacity: 0.7;
     transition: 0.5s;
+}
+
+details>summary:active {
+    cursor: pointer;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+summary {
+    display: block;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+summary::before {
+    content: '\02C3';
+    padding-right: 0.5em;
+}
+
+details[open]>summary::before {
+    content: '\02C5';
 }
 
 @media screen and (max-width:900px) {
@@ -135,7 +159,6 @@ details>summary:hover {
         background-repeat: no-repeat;
         background-position: center;
     }
-    
     .firstp h1 {
         font-size: 60px;
     }
@@ -158,6 +181,5 @@ details>summary:hover {
     }
     .text {
         font-size: 18px;
-        !important
     }
 }

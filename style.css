@@ -101,7 +101,7 @@
 
 .preloaderText {
     font-size: 30px;
-    font-family: Comfortaa;
+    font-family: 'Poppins', sans-serif;
     color: #141414;
     margin: 15px;
     animation-name: preload;
@@ -318,7 +318,7 @@ main {
 .right {
     height: 100vh;
     width: 50%;
-    font-family: Comfortaa;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 25px;
@@ -411,7 +411,7 @@ main {
 }
 
 .bottom {
-    font-family: Comfortaa;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 600;
     color: #141414;

@@ -85,6 +85,7 @@
 }
 
 .button {
+    font-family: 'Comfortaa', sans-serif;
     user-select: none;
     height: 100%;
     width: 80px;

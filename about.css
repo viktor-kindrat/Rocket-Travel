@@ -65,7 +65,7 @@
 
 .about {
     overflow: hidden;
-    font-family: Comfortaa;
+    font-family: 'Poppins', sans-serif;
     font-size: 20px;
     display: flex;
     justify-content: center;
@@ -90,9 +90,8 @@
 }
 
 .text p {
-    font-family: Comfortaa;
-    font-style: normal;
-    font-weight: normal;
+    font-family: 'Poppins', sans-serif;
+    line-height: 23px;
     font-size: 18px;
     padding: 70px;
     text-align: center;
