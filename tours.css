@@ -7,6 +7,10 @@
     color: #3B003D;
 }
 
+.logo p {
+    top: 0;
+}
+
 .logo {
     color: #3B003D;
 }
@@ -106,7 +110,7 @@
     transition: 0.5s;
 }
 
-@media screen and (max-width:900px) {
+@media screen and (max-width:1000px) {
     .boxt {
         min-width: 200px;
         min-height: 300px;

@@ -20,6 +20,10 @@
     color: #fff;
 }
 
+.logo p {
+    top: 0;
+}
+
 .firstp {
     height: 85vh;
     width: 100%;
@@ -164,7 +168,6 @@ details[open]>summary::before {
     }
     .secondp h1 {
         font-size: 40px;
-        !important
     }
     .name {
         font-size: 25px;

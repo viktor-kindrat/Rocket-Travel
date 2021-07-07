@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     overflow-x: hidden;
+    ;
 }
 
 #preloader {
@@ -158,12 +159,11 @@
 .logo {
     overflow: hidden;
     height: 100%;
-    width: 50%;
+    width: 30%;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     padding-left: 117px;
-    font-family: ModernAntiqua;
     color: #fff;
     font-style: normal;
     font-weight: 500;
@@ -182,9 +182,15 @@
     margin-right: 15px;
 }
 
+.logo p {
+    position: relative;
+    top: 8px;
+    font-family: 'Aldrich', sans-serif;
+}
+
 .navigation {
     overflow: hidden;
-    width: 50%;
+    width: 70%;
     height: 100%;
     display: flex;
     justify-content: space-between;
@@ -253,6 +259,7 @@ main {
     align-items: center;
     text-align: center;
     color: #FFFFFF;
+    z-index: 1;
 }
 
 @font-face {
@@ -283,6 +290,24 @@ main {
     transition: 1s;
     border-radius: 40px;
     color: #fff;
+}
+
+.mybtn:active {
+    animation-name: pulse;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 #93049b;
+    }
+    50% {
+        box-shadow: 0 0 40px #610966;
+    }
+    100% {
+        box-shadow: 0 0 0 #93049b;
+    }
 }
 
 
@@ -531,6 +556,10 @@ a img:hover {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.logo {
+    justify-content: flex-start;
 }
 
 @media screen and (max-width:900px) {
