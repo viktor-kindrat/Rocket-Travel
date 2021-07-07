@@ -171,11 +171,6 @@
     user-select: none;
 }
 
-@font-face {
-    font-family: ModernAntiqua;
-    src: url(./fonts/ModernAntiqua.ttf)
-}
-
 .logo img {
     height: 40px;
     width: 40px;
